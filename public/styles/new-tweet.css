@@ -33,3 +33,7 @@ textarea[name="text"] {
 .counter {
   float: right;
 }
+
+.overlimit {
+  color: red;
+}

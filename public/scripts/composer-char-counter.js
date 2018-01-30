@@ -4,6 +4,9 @@ $( document ).ready(function() {
     let max = 140;
     let textlength = input.length;
     max -= textlength;
+    if (max < 0) {
+      $('.counter').addClass('overlimit');
+    }
     $('.counter').text(max);
    });
 });
