@@ -7,7 +7,7 @@
   background: linear-gradient(#e9e9e9, lavender);
 }
 
-h2 {
+.new-tweet h2 {
   border-bottom-style: solid;
   padding-top: 10px;
 }
@@ -36,4 +36,68 @@ textarea[name="text"] {
 
 .overlimit {
   color: red;
+}
+
+article {
+    display: block;
+}
+
+.tweets {
+  padding-bottom: 10px;
+  margin-left: 2em;
+  margin-right: 2em;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: darkgrey;
+}
+
+.tweets header {
+  background: linear-gradient(#e9e9e9, lavender);
+  width: 100%;
+  padding: 5px 10px;
+  line-height: 80px;
+  margin-bottom: 10px;
+
+}
+
+.tweets h1 {
+  display:inline;
+  margin-left: 10px;
+  color: #699;
+}
+
+.tweets .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  display:inline;
+  float: left;
+  margin-top: 8px;
+}
+
+.tweets h2 {
+  text-align: right;
+  color: #a9a9a9 ;
+  font-size: 16px;
+  font-weight: normal;
+  display:inline;
+  margin-left: 50px;
+
+}
+
+.tweets .aTweet {
+  margin: 10px;
+  font-size: 18px;
+  display: block;
+}
+
+.tweets footer {
+  font-size: 12px;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
 }

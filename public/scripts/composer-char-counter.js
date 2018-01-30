@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   $("textarea").on('keyup', function () {
-    let input = $('#tweet-input')[0].value;
+    let input = this.value;
     let max = 140;
     let textlength = input.length;
     max -= textlength;
