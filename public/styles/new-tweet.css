@@ -95,6 +95,9 @@ article {
   display:inline;
   margin-left: 10px;
   color: #b0dbb7;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .tweets .icon {
@@ -110,7 +113,7 @@ article {
 .tweets h2 {
   text-align: right;
   color: #b0dbb7 ;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   display:inline;
   margin-left: 50px;
