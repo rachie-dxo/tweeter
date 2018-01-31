@@ -5,72 +5,33 @@
  */
 
 $( document ).ready(function() {
-  console.log("ayo");
   function createTweetElement (tweetObj) {
-
-    var $tweet = $("<article>").addClass("tweet");
-
+    const $tweet = $("<article>").addClass("tweets");
     const $header = $('<header>');
     const $span = $('<span>').addClass("aTweet").text(tweetObj["content"].text);
     const $footer = $('<footer>').text(tweetObj.created_at);
-
     const $h1 = $('<h1>').text(tweetObj['user'].name);
     const $h2 = $('<h2>').text(tweetObj["user"].handle);
-
     const $image = $('<img>').addClass("icon").attr('src', tweetObj["user"].avatars.small);
 
     $header.append($image);
     $header.append($h1);
     $header.append($h2);
     $tweet.append($header);
-
     $tweet.append($span);
-
     $tweet.append($footer);
 
     return $tweet;
-
   }
 
-const tweetData = {
-  "user": {
-    "name": "Newton",
-    "avatars": {
-      "small":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png",
-      "regular": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188.png",
-      "large":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_200.png"
-    },
-    "handle": "@SirIsaac"
-  },
-  "content": {
-    "text": "If I have seen further it is by standing on the shoulders of giants"
-  },
-  "created_at": 1461116232227
+function renderTweets (arr) {
+  for (var dataset of arr) {
+    var $individual = createTweetElement(dataset);
+    $('#tweets').append($individual);
+  }
 }
 
-// var $tweet = createTweetElement(tweetData);
-
-// // Test / driver code (temporary)
-// console.log($tweet); // to see what it looks like
-// $('.tweets').append($tweet);
-
-  function renderTweets (arr) {
-
-    for (var dataset of arr) {
-      var $individual = createTweetElement(dataset);
-      $('.tweets').append($individual);
-      console.log($individual);
-    }
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
-
-  }
-
-
 // Test / driver code (temporary). Eventually will get this from the server.
-
-// Fake data taken from tweets.json
 const data = [
   {
     "user": {

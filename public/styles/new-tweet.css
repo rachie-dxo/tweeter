@@ -49,6 +49,7 @@ article {
   padding-bottom: 10px;
   margin-left: 2em;
   margin-right: 2em;
+  margin-top: 10px;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
@@ -98,6 +99,7 @@ article {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
+  position: relative;
 }
 
 .tweets .icon {
@@ -117,6 +119,7 @@ article {
   font-weight: normal;
   display:inline;
   margin-left: 50px;
+  float: right;
 
 }
 
