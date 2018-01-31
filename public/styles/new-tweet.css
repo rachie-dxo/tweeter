@@ -9,6 +9,7 @@
 
 .new-tweet h2 {
   border-bottom-style: solid;
+  border-width: 1px;
   padding-top: 10px;
   color: #6ba775;
 }
@@ -53,6 +54,33 @@ article {
   border-color: #b0dbb7;
 }
 
+.tweets:hover {
+  border-color: #6ba775;
+}
+
+.tweets:hover h1 {
+  color: #6ba775;
+}
+
+.tweets:hover h2 {
+  color: #6ba775;
+}
+
+.tweets:hover .aTweet {
+  color: darkslategrey;
+}
+
+.tweets:hover .icon {
+  color: darkslategrey;
+  opacity: 1;
+}
+
+.tweets:hover footer {
+  color: #2C823B;
+  border-color: #6ba775;
+}
+
+
 .tweets header {
   background: linear-gradient(#ffffff, #b0dbb7);
   width: 100%;
@@ -65,7 +93,7 @@ article {
 .tweets h1 {
   display:inline;
   margin-left: 10px;
-  color: #6ba775;
+  color: #b0dbb7;
 }
 
 .tweets .icon {
@@ -75,11 +103,12 @@ article {
   display:inline;
   float: left;
   margin-top: 8px;
+  opacity: 0.5;
 }
 
 .tweets h2 {
   text-align: right;
-  color: #2C823B ;
+  color: #b0dbb7 ;
   font-size: 16px;
   font-weight: normal;
   display:inline;
@@ -91,15 +120,16 @@ article {
   margin: 10px;
   font-size: 18px;
   display: block;
-  color: darkslategrey;
+  color: #a9a9a9;
 }
 
 .tweets footer {
   font-size: 12px;
   border-top-style: solid;
   border-width: 1px;
-  border-color: lightgrey;
+  border-color: #b0dbb7;
   padding-left: 10px;
   padding-top: 10px;
   margin-top: 10px;
+  color: darkgrey;
 }
