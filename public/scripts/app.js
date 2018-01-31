@@ -21,7 +21,7 @@ $( document ).ready(function() {
     $tweet.append($span);
     $tweet.append($footer);
 
-    return $tweet;
+      return $tweet;
   }
 
 function renderTweets (arr) {
@@ -30,6 +30,10 @@ function renderTweets (arr) {
     $('#tweets').append($individual);
   }
 }
+
+$('#newtweetform').on('submit', function() {
+  event.preventDefault();
+});
 
 // Test / driver code (temporary). Eventually will get this from the server.
 const data = [
