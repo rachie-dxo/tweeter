@@ -22,3 +22,19 @@
   font-size: 2em;
   float: left;
 }
+
+#nav-bar .compose {
+  float: right;
+  margin-top: 17px;
+  height: 45px;
+  line-height: 5px;
+  border-radius: 2px;
+  background: #65b473;
+  box-shadow: 3px 7px 18px #57ae67;
+  color: #d7eddb;
+}
+
+#nav-bar .compose:hover {
+  background: #57ae67;
+  box-shadow: none;
+}
