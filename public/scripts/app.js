@@ -25,18 +25,6 @@ $( document ).ready(function() {
       return $tweet;
   }
 
-  function validation () {
-    var value = $('#tweet-input').value;
-    var $err1 = "Please enter something";
-    var $err2 = "Too many characters";
-    if (value === '' || value === null) {
-      $('err1').slideDown();
-    } else if (value.length > 140) {
-      $('err2').slideDown();
-    }
-    return;
-  }
-
   function renderTweets (arr) {
     $('#tweets').html('');
     for (var dataset of arr) {
@@ -47,6 +35,14 @@ $( document ).ready(function() {
 
   $('#newtweetform').on('submit', function() {
     event.preventDefault();
+    var value = $('#tweet-input').val().length;
+    if (value === 0) {
+      $.flash('You\'re tweeting into the void. Try entering some text.');
+      return;
+    } else if (value > 140) {
+      $.flash('Less is more. Try paraphrasing that, or get a diary.');
+      return;
+    }
     var serialized = $('#tweet-input').serialize();
     jQuery.post('/tweets', serialized, function () {
       console.log('Success ' , serialized);
