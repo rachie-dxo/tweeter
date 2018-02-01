@@ -34,10 +34,9 @@ $( document ).ready(function() {
   }
 
   $( ".compose" ).click(function() {
-  $( ".new-tweet" ).slideToggle( "slow", function() {
-    // Animation complete.
+    $( ".new-tweet" ).slideToggle();
+    $( "#tweet-input" ).focus().select();
   });
-});
 
   $('#newtweetform').on('submit', function() {
     event.preventDefault();
