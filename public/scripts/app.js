@@ -33,6 +33,12 @@ $( document ).ready(function() {
     }
   }
 
+  $( ".compose" ).click(function() {
+  $( ".new-tweet" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
   $('#newtweetform').on('submit', function() {
     event.preventDefault();
     var value = $('#tweet-input').val().length;
