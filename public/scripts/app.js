@@ -29,7 +29,7 @@ $( document ).ready(function() {
     $('#tweets').html('');
     for (var dataset of arr) {
       var $individual = createTweetElement(dataset);
-      $('#tweets').append($individual);
+      $('#tweets').prepend($individual);
     }
   }
 
