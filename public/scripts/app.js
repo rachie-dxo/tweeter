@@ -5,6 +5,7 @@
  */
 
 $( document ).ready(function() {
+
   function createTweetElement (tweetObj) {
     const $tweet = $("<article>").addClass("tweets");
     const $header = $('<header>');
@@ -24,11 +25,23 @@ $( document ).ready(function() {
       return $tweet;
   }
 
+  function validation () {
+    var value = $('#tweet-input').value;
+    var $err1 = "Please enter something";
+    var $err2 = "Too many characters";
+    if (value === '' || value === null) {
+      $(err1).slideDown();
+    } else if (value.length > 140) {
+      $(err2).slideDown();
+    }
+    return;
+  }
+
   function renderTweets (arr) {
     for (var dataset of arr) {
       var $individual = createTweetElement(dataset);
-      $('#tweets').append($individual);
     }
+    $('#tweets').append($individual);
   }
 
   $('#newtweetform').on('submit', function() {
