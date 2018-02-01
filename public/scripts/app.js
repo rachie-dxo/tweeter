@@ -30,18 +30,19 @@ $( document ).ready(function() {
     var $err1 = "Please enter something";
     var $err2 = "Too many characters";
     if (value === '' || value === null) {
-      $(err1).slideDown();
+      $('err1').slideDown();
     } else if (value.length > 140) {
-      $(err2).slideDown();
+      $('err2').slideDown();
     }
     return;
   }
 
   function renderTweets (arr) {
+    $('#tweets').html('');
     for (var dataset of arr) {
       var $individual = createTweetElement(dataset);
+      $('#tweets').append($individual);
     }
-    $('#tweets').append($individual);
   }
 
   $('#newtweetform').on('submit', function() {

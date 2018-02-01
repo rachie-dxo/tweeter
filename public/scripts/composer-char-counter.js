@@ -6,6 +6,8 @@ $( document ).ready(function() {
     max -= textlength;
     if (max < 0) {
       $('.counter').addClass('overlimit');
+    } else {
+      $('.counter').removeClass('overlimit');
     }
     $('.counter').text(max);
    });
