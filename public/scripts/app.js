@@ -6,11 +6,13 @@
 
 $( document ).ready(function() {
 
+
+
   function createTweetElement (tweetObj) {
     const $tweet = $("<article>").addClass("tweets");
     const $header = $('<header>');
     const $span = $('<span>').addClass("aTweet").text(tweetObj["content"].text);
-    const $footer = $('<footer>').text(tweetObj.created_at);
+    const $footer = $('<footer>').text(moment(tweetObj.created_at).fromNow());
     const $h1 = $('<h1>').text(tweetObj['user'].name);
     const $h2 = $('<h2>').text(tweetObj["user"].handle);
     const $image = $('<img>').addClass("icon").attr('src', tweetObj["user"].avatars.small);
@@ -67,4 +69,6 @@ $( document ).ready(function() {
       });
 }
   loadTweets();
+  var date = new Date();
+  console.log(moment(date).fromNow());
 });
