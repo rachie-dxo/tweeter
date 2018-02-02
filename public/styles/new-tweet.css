@@ -123,11 +123,11 @@ article {
 
 .tweets h2 {
   text-align: right;
-  color: #b0dbb7 ;
+  color: #dceedf ;
   font-size: 14px;
   font-weight: normal;
   display:inline;
-  margin-left: 50px;
+  margin-left: 0 auto;
   float: right;
 }
 
