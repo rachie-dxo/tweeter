@@ -10,7 +10,7 @@ module.exports = function makeDataHelpers(db) {
       callback(null,true);
     },
 
-    // Get all tweets in `db`, sorted by newest first
+    // Get all tweets in `db`
     getTweets: function(callback) {
       db.collection("tweets").find().toArray(callback);
     }
