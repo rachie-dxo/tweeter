@@ -93,14 +93,12 @@ article {
   border-color: #6ba775;
 }
 
-
 .tweets header {
   background: #b4dbbb;
   width: 100%;
   padding: 5px 10px;
   line-height: 80px;
   margin-bottom: 10px;
-
 }
 
 .tweets h1 {
@@ -131,7 +129,6 @@ article {
   display:inline;
   margin-left: 50px;
   float: right;
-
 }
 
 .tweets .aTweet {

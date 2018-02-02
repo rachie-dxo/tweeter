@@ -6,8 +6,6 @@
 
 $( document ).ready(function() {
 
-
-
   function createTweetElement (tweetObj) {
     const $tweet = $("<article>").addClass("tweets");
     const $header = $('<header>');
@@ -69,6 +67,4 @@ $( document ).ready(function() {
       });
 }
   loadTweets();
-  var date = new Date();
-  console.log(moment(date).fromNow());
 });
