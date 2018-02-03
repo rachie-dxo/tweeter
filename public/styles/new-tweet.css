@@ -19,17 +19,16 @@
 input[type="submit"] {
   margin-bottom: 10px;
   margin-top: 5px;
-  border-radius: 2px;
-  background: #bce9c3;
-  box-shadow: 2px 5px 18px #65b473;
+  border-radius: 4px;
+  background: #d7eddb;
+  border-style: solid;
+  border-color: #65b473;
   color: #65b473;
 }
 
 input[type="submit"]:hover {
   border-style: solid;
-  border-width: 2px;
   background: #aedbb6;
-  box-shadow: none;
 }
 
 form[action="/tweets"] {
@@ -94,7 +93,7 @@ article {
 }
 
 .tweets header {
-  background: #b4dbbb;
+  background: linear-gradient(white, #b4dbbb);
   width: 100%;
   padding: 5px 10px;
   line-height: 80px;
@@ -104,9 +103,8 @@ article {
 .tweets h1 {
   display:inline;
   margin-left: 10px;
-  color: #dceedf;
-  font-size: 18px;
-  text-transform: uppercase;
+  color: #B0DBB7;
+  font-size: 22px;
   font-weight: none;
   position: relative;
 }
@@ -123,7 +121,7 @@ article {
 
 .tweets h2 {
   text-align: right;
-  color: #dceedf ;
+  color: #B0DBB7 ;
   font-size: 14px;
   font-weight: normal;
   display:inline;
